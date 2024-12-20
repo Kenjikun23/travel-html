@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travellers Travel agency</title>
+    <style>
+      main {
+        padding-bottom: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        Pages 
+            - Home page
+            - About page
+            - Destinations page
+            - Blog page
+     
+    -->
+    <!-- Home page content -->
+    <!-- 
+        - Welcome message  ✅
+        - About ✅
+        - Contacts
+        - Destinations / activities ✅
+        - Testimonials ✅
+        - Booking section ✅
+    -->
+
+    <header>
+      <nav>
+        <a href="/">
+          <!-- TODO: Add logo url -->
+          <img src="" alt="Logo" width="50px" />
+        </a>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+          <li>
+            <a href="/destinations.html">Destinations</a>
+          </li>
+          <li>
+            <a href="/blog.html">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Welcome to Travellers Travel agency. Book your travels with ease</h1>
+      <a href="/#destinations">View destinations</a>
+
+      <section>
+        <!-- Brief about -->
+        <h2>About us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis
+          ipsa minus ratione ab quibusdam in, nam vel corporis illo velit eum
+          laboriosam dolore doloremque deserunt ullam temporibus consequatur
+          culpa expedita molestiae. Aliquam eligendi atque, dolore eaque quos
+          minima illum, inventore cupiditate soluta assumenda quae temporibus
+          iusto tempora exercitationem repellendus.
+        </p>
+        <a href="/about.html">Read more</a>
+      </section>
+
+      <section id="destinations">
+        <h2>Destinations</h2>
+        <!-- Title, img, price, rating -->
+        <article>
+          <img
+            src="https://www.telegraph.co.uk/content/dam/Travel/Destinations/Africa/Seychelles/AP78907278_Seychelles_Trave.jpg?imwidth=680"
+            alt="Image of an island in Seychelles"
+            width="400px"
+          />
+          <h3>Seychelles</h3>
+          <p>$1500</p>
+          <p>5</p>
+        </article>
+
+        <article>
+          <img
+            src="https://www.naturaltoursandsafaris.com/wp-content/webp-express/webp-images/uploads/2023/05/Chale-Island-Diani-Beach-Kenya-Natural-World-Kenya-Safaris.jpeg.webp"
+            alt="An image of a beach in Diani"
+            width="400px"
+          />
+          <h3>Diani</h3>
+          <p>$800</p>
+          <p>5</p>
+        </article>
+
+        <article>
+          <img
+            src="https://abirikenya.com/wp-content/uploads/2024/09/migori-county1.jpg"
+            alt="An image of a village in Migori"
+            width="400px"
+          />
+          <h3>Migori</h3>
+          <p>$800</p>
+          <p>5</p>
+        </article>
+
+        <a href="/destinations.html">View all destinations</a>
+      </section>
+
+      <section>
+        <h2>Testimonials</h2>
+        <!-- Name, image, message -->
+
+        <article>
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/014/194/222/non_2x/avatar-icon-human-a-person-s-badge-social-media-profile-symbol-the-symbol-of-a-person-vector.jpg"
+            alt="Image of John Doe"
+            width="50px"
+          />
+          <h3>John Doe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
+            reiciendis ut perspiciatis ab dolorem eius vero exercitationem omnis
+            error.
+          </p>
+        </article>
+
+        <article>
+          <img
+            src="https://cdn.icon-icons.com/icons2/2643/PNG/512/female_woman_people_person_avatar_black_tone_icon_159364.png"
+            alt="Image of Jane Doe"
+            width="50px"
+          />
+          <h3>Jane Doe</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+            molestiae nostrum harum officia aut minima quis quae, iusto odit
+            animi.
+          </p>
+        </article>
+
+        <article>
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/014/194/222/non_2x/avatar-icon-human-a-person-s-badge-social-media-profile-symbol-the-symbol-of-a-person-vector.jpg"
+            alt="Image of Brian Mwangi"
+            width="50px"
+          />
+          <h3>Brian Mwangi</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit sunt
+            cumque eaque ea officiis quam, dolore vel omnis quae expedita soluta
+            nemo impedit iure voluptate.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Book your trip</h2>
+        <!-- 
+        Info needed:
+            - User's name ✅
+            - User's contact (email & phone no) ✅
+            - Travel dates (start & end date) ✅
+            - No of travellers ✅
+            - Message ✅
+        -->
+        <form action="/" method="post">
+          <label for="name">Name</label>
+          <input type="text" name="username" id="name" />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+
+          <label for="phone">Phone</label>
+          <input type="text" name="phone" id="phone" />
+
+          <label for="start-date">Start date</label>
+          <input type="date" name="start-date" id="start-date" />
+
+          <label for="end-date">End date</label>
+          <input type="date" name="end-date" id="end-date" />
+
+          <label for="capacity">How many people will be travelling?</label>
+          <input type="number" name="capacity" id="capacity" />
+
+          <label for="message">Message</label>
+          <textarea type="text" name="message" id="message" rows="5"></textarea>
+
+          <button>Book</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
